@@ -28,7 +28,7 @@ public class CalculatorApp extends Application {
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/styles.css")).toExternalForm());
 
         // Configure stage
-        primaryStage.setTitle("fx-999 EQ PLUS LBYCPOB Calculator");
+        primaryStage.setTitle("Malirong and Abuel Calculator");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false); // Calculator has fixed size
         primaryStage.show();
