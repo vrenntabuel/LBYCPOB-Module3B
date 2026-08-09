@@ -1,0 +1,208 @@
+/* styles.css - Professional Casio-inspired Calculator Styling */
+
+/* Calculator Header*/
+.top-label {
+    -fx-font-family: "Segoe UI", "Roboto", "Open Sans", sans-serif;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-alignment: top-right;
+    -fx-padding: 10px;
+}
+
+
+/* Main calculator body */
+.calculator-body {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #34495e);
+    -fx-border-color: #1a252f;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 2);
+}
+
+/* Display styling */
+.display {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #00ff00;
+    -fx-font-family: "Roboto Thin", "Open Sans", sans-serif;
+    -fx-alignment: center-right;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 15px;
+    -fx-border-color: #333333;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.5), 5, 0, 0, 0);
+    -fx-min-height: 60px;
+}
+
+.display:focused {
+    -fx-border-color: #00ff00;
+    -fx-effect: dropshadow(gaussian, #00ff00, 5, 0, 0, 0);
+}
+
+/* Number buttons */
+.number-button {
+    -fx-background-color: linear-gradient(to bottom, #ecf0f1, #bdc3c7);
+    -fx-text-fill: #2c3e50;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-border-color: #95a5a6;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 1);
+    -fx-cursor: hand;
+}
+
+.number-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+
+.number-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #bdc3c7, #95a5a6);
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 3, 0, 0, 0);
+}
+
+/* Operator buttons */
+.operator-button {
+    -fx-background-color: linear-gradient(to bottom, #e74c3c, #c0392b);
+    -fx-text-fill: white;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-border-color: #a93226;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 3, 0, 0, 1);
+    -fx-cursor: hand;
+}
+
+.operator-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ec7063, #e74c3c);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 5, 0, 0, 2);
+}
+
+.operator-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #c0392b, #a93226);
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 3, 0, 0, 0);
+}
+
+/* Scientific function buttons */
+.scientific-button {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-text-fill: white;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-border-color: #1f618d;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 3, 0, 0, 1);
+    -fx-cursor: hand;
+}
+
+.scientific-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #5dade2, #3498db);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 5, 0, 0, 2);
+}
+
+.scientific-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2980b9, #1f618d);
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 3, 0, 0, 0);
+}
+
+/* Function buttons (Clear, etc.) */
+.function-button {
+    -fx-background-color: linear-gradient(to bottom, #f39c12, #e67e22);
+    -fx-text-fill: white;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-border-color: #d35400;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 3, 0, 0, 1);
+    -fx-cursor: hand;
+}
+
+.function-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #f7dc6f, #f39c12);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 5, 0, 0, 2);
+}
+
+.function-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #e67e22, #d35400);
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 3, 0, 0, 0);
+}
+
+/* Special styling for equals button */
+/* Styling for the equals button */
+.equals-button {
+    -fx-background-color: linear-gradient(to bottom, #27ae60, #229954);
+    -fx-border-color: #1e8449;
+}
+
+.equals-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #58d68d, #27ae60);
+}
+
+.equals-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #229954, #1e8449);
+}
+
+/* Button text styling */
+Button {
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+/* Focus indicators */
+Button:focused {
+    -fx-border-color: #f1c40f;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, #f1c40f, 8, 0, 0, 0);
+}
+
+/* Animation effects */
+Button {
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+/* Casio-style branding area */
+.branding-label {
+    -fx-text-fill: #d8d8d8;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* Additional professional touches */
+.root {
+    -fx-background-color: #F5F5F7;
+}
+
+/* Hover effects for professional feel */
+.number-button:hover,
+.operator-button:hover,
+.scientific-button:hover,
+.function-button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: -fx-scale-x 0.1s, -fx-scale-y 0.1s;
+}
+
+/* Pressed effect */
+.number-button:pressed,
+.operator-button:pressed,
+.scientific-button:pressed,
+.function-button:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+    -fx-transition: -fx-scale-x 0.05s, -fx-scale-y 0.05s;
+}
