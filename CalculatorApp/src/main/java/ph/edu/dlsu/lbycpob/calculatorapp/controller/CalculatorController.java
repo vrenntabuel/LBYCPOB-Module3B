@@ -178,7 +178,7 @@ public class CalculatorController {
      * factorial, and exponentiation operations.
      */
     private void setupScientificButtons() {
-        setupScientificButton("sin", "sin"); // 1st arg: buttonLabel; 2nd arg: operation
+        setupScientificButton("sin", "sin");
         setupScientificButton("cos", "cos");
         setupScientificButton("tan", "tan");
         setupScientificButton("ln", "ln");
@@ -186,6 +186,11 @@ public class CalculatorController {
         setupScientificButton("√", "sqrt");
         setupScientificButton("!", "factorial");
         setupScientificButton("^", "^");
+
+        setupScientificButton("1/x", "reciprocal");
+        setupScientificButton("abs", "abs");
+        setupScientificButton("∛", "cbrt");
+        setupScientificButton("eˣ", "exp");
     }
 
     /**
@@ -294,17 +299,30 @@ public class CalculatorController {
      * @param functionName The name of the scientific operation to perform
      */
     private void handleScientificOperation(String functionName) {
+        // 1/x should immediately operate on the current value
+        if (functionName.equals("reciprocal")) {
+            try {
+                double value = getCurrentDisplayValue();
+                double result = model.performScientificOperation(functionName, value);
+                displayResult(result);
+            } catch (Exception e) {
+                view.updateDisplay("Error");
+                model.setResultDisplayed(true);
+            }
+            return;
+        }
+
         if (model.isResultDisplayed()) {
             currentInput.setLength(0);
             model.setResultDisplayed(false);
         }
 
-        if (!model.calculator.isShiftActive()){
+        if (!model.calculator.isShiftActive()) {
             currentInput.append(functionName);
-        } else { // SHIFT functions
+        } else {
             currentInput.append("a" + functionName);
         }
-        // Add function with opening parenthesis
+
         currentInput.append("(");
 
         updateDisplay();

@@ -24,7 +24,7 @@ public class CalculatorApp extends Application {
         controller.run();
 
         // Setup scene
-        Scene scene = new Scene(view.getRoot(), 400, 700);
+        Scene scene = new Scene(view.getRoot(), 400, 740);
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/styles.css")).toExternalForm());
 
         // Configure stage
