@@ -1,28 +1,79 @@
-/* mystyle.css */
-.root{
-    -fx-font-size: 16pt;
-    -fx-font-family: "Palatino Linotype";
-    -fx-base: rgb(132, 145, 47);
-    -fx-background: rgb(225, 228, 203);
-    -fx-background-image: url("witcher.jpg");
-    -fx-background-repeat: stretch;
-    -fx-background-position: top left;
-    -fx-background-size: cover, auto;
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 16px;
+
+    -fx-background-color: white;
+    -fx-background-image: url("engineering-grid.jpg");
+    -fx-background-repeat: repeat;
 }
+
+
+/* Main buttons */
 .button {
-  -fx-pref-width: 400px;
-  -fx-background-color: #4CAF50; /* Green */
-  -fx-border: none;
-  -fx-color: white;
-  -fx-padding: 15px 32px;
-  -fx-text-fill: #ffffff;
-  -fx-text-align: center;
-  -fx-text-decoration: none;
-  -fx-display: inline-block;
-  -fx-font-size: 16pt;
-  -fx-font-weight: bold;
+    -fx-pref-width: 400px;
+    -fx-pref-height: 55px;
+
+    -fx-background-color: #1769AA;
+    -fx-text-fill: white;
+
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+
+    -fx-cursor: hand;
 }
+
+.button:hover {
+    -fx-background-color: #2196F3;
+}
+
+.button:pressed {
+    -fx-background-color: #0D47A1;
+}
+
+
+/* Labels */
 .label {
-  -fx-text-fill: #ffffff;
-  -fx-effect: dropshadow(three-pass-box, white, 20, 0, 0, 0);
+    -fx-text-fill: #17324D;
+
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+
+/* Input and result fields */
+.text-field {
+    -fx-pref-width: 400px;
+    -fx-pref-height: 45px;
+
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+
+    -fx-text-fill: #17324D;
+
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 17px;
+
+    -fx-border-color: #1769AA;
+    -fx-border-width: 2px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
+
+.text-field:focused {
+    -fx-border-color: #2196F3;
+    -fx-border-width: 2px;
+}
+
+
+/* Prevent GridPane/VBox from covering the background */
+.grid-pane {
+    -fx-background-color: transparent;
+}
+
+.vbox {
+    -fx-background-color: transparent;
 }
