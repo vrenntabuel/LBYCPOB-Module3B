@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="CENTER"
+          hgap="15"
+          vgap="15">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Column constraints -->
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+
+    <!-- Row constraints -->
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+
+    <!-- Row 1 -->
+    <ImageView GridPane.columnIndex="0" GridPane.rowIndex="0"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="1" GridPane.rowIndex="0"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="2" GridPane.rowIndex="0"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="3" GridPane.rowIndex="0"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="4" GridPane.rowIndex="0"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <!-- Row 2 -->
+    <ImageView GridPane.columnIndex="0" GridPane.rowIndex="1"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="1" GridPane.rowIndex="1"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="2" GridPane.rowIndex="1"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="3" GridPane.rowIndex="1"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="4" GridPane.rowIndex="1"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <!-- Row 3 -->
+    <ImageView GridPane.columnIndex="0" GridPane.rowIndex="2"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="1" GridPane.rowIndex="2"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="2" GridPane.rowIndex="2"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="3" GridPane.rowIndex="2"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="4" GridPane.rowIndex="2"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <!-- Row 4 -->
+    <ImageView GridPane.columnIndex="0" GridPane.rowIndex="3"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="1" GridPane.rowIndex="3"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="2" GridPane.rowIndex="3"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="3" GridPane.rowIndex="3"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="4" GridPane.rowIndex="3"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <!-- Row 5 -->
+    <ImageView GridPane.columnIndex="0" GridPane.rowIndex="4"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="1" GridPane.rowIndex="4"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="2" GridPane.rowIndex="4"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="3" GridPane.rowIndex="4"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+    <ImageView GridPane.columnIndex="4" GridPane.rowIndex="4"
+               fitWidth="70" fitHeight="45" preserveRatio="true">
+        <image><Image url="@flag.png"/></image>
+    </ImageView>
+
+</GridPane>
