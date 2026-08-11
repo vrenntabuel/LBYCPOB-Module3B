@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" layoutX="50.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff2d1f" height="150.0" layoutX="50.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Polygon fill="WHITE" layoutX="111.0" layoutY="110.0" points="-62.0, -59.99999237060547, 150.39999389648438, 89.99998474121094, -62.0, 239.99996948242188" stroke="BLACK" strokeType="INSIDE" />
+      <Circle centerX="125.0" centerY="200.0" fill="#deff1f" layoutY="3.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="117.10003662109375" endY="139.19998168945312" layoutX="8.0" layoutY="15.0" startX="117.10002136230469" startY="161.89999389648438" />
+      <Line endX="117.10003662109375" endY="139.19998168945312" layoutX="8.0" layoutY="89.0" startX="117.10002136230469" startY="161.89999389648438" />
+      <Line endX="145.0" endY="165.39999389648438" layoutX="33.0" layoutY="37.0" startX="117.10003662109375" startY="165.39999389648438" />
+      <Line endX="145.0" endY="165.39999389648438" layoutX="-44.0" layoutY="37.0" startX="120.79998779296875" startY="165.39999389648438" />
+      <Line endX="107.79998779296875" endY="140.39999389648438" layoutX="-19.0" layoutY="26.0" startX="126.39999389648438" startY="157.79998779296875" />
+      <Line endX="117.10003662109375" endY="139.19998168945312" layoutX="-9.0" layoutY="82.0" startX="99.39999389648438" startY="158.79998779296875" />
+      <Line endX="107.79998779296875" endY="140.39999389648438" layoutX="37.0" layoutY="45.0" startX="125.19998168945312" startY="119.19999694824219" />
+      <Line endX="117.10003662109375" endY="139.19998168945312" layoutX="29.0" layoutY="79.0" startX="135.39999389648438" startY="157.8000030517578" />
+      <SVGPath content="M 0,-20 L 4.7,-6.5 L 19,-6.2 L 7.6,2.5 L 11.8,16.2 L 0,8 L -11.8,16.2 L -7.6,2.5 L -19,-6.2 L -4.7,-6.5 Z" fill="#e5ff00" layoutX="71.0" layoutY="95.0" stroke="BLACK" />
+      <SVGPath content="M 0,-20 L 4.7,-6.5 L 19,-6.2 L 7.6,2.5 L 11.8,16.2 L 0,8 L -11.8,16.2 L -7.6,2.5 L -19,-6.2 L -4.7,-6.5 Z" fill="#e5ff00" layoutX="217.0" layoutY="202.0" stroke="BLACK" />
+      <SVGPath content="M 0,-20 L 4.7,-6.5 L 19,-6.2 L 7.6,2.5 L 11.8,16.2 L 0,8 L -11.8,16.2 L -7.6,2.5 L -19,-6.2 L -4.7,-6.5 Z" fill="#e5ff00" layoutX="71.0" layoutY="306.0" stroke="BLACK" />
+   </children>
+</AnchorPane>
