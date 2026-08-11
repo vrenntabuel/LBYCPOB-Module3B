@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           prefWidth="600.0"
+           prefHeight="500.0">
+
+    <!-- TOP LEFT -->
+    <ImageView fitWidth="100.0"
+               fitHeight="60.0"
+               preserveRatio="true"
+               translateX="-160.0"
+               translateY="-150.0">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <!-- TOP CENTER -->
+    <ImageView fitWidth="100.0"
+               fitHeight="60.0"
+               preserveRatio="true"
+               translateY="-150.0">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <!-- TOP RIGHT -->
+    <ImageView fitWidth="100.0"
+               fitHeight="60.0"
+               preserveRatio="true"
+               translateX="160.0"
+               translateY="-150.0">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <!-- MIDDLE LEFT -->
+    <ImageView fitWidth="100.0"
+               fitHeight="60.0"
+               preserveRatio="true"
+               translateX="-160.0">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <!-- MIDDLE RIGHT -->
+    <ImageView fitWidth="100.0"
+               fitHeight="60.0"
+               preserveRatio="true"
+               translateX="160.0">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <!-- BOTTOM LEFT -->
+    <ImageView fitWidth="100.0"
+               fitHeight="60.0"
+               preserveRatio="true"
+               translateX="-160.0"
+               translateY="150.0">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <!-- BOTTOM CENTER -->
+    <ImageView fitWidth="100.0"
+               fitHeight="60.0"
+               preserveRatio="true"
+               translateY="150.0">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+    <!-- BOTTOM RIGHT -->
+    <ImageView fitWidth="100.0"
+               fitHeight="60.0"
+               preserveRatio="true"
+               translateX="160.0"
+               translateY="150.0">
+        <image>
+            <Image url="@flag.png"/>
+        </image>
+    </ImageView>
+
+</StackPane>
