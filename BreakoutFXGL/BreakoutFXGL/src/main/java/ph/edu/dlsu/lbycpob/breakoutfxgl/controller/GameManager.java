@@ -96,16 +96,16 @@ public class GameManager {
         double brickWidth = 80;
         double brickHeight = 24;
         double gap = 6;
-
         double startY = 90;
 
         // 1 = brick, 0 = empty space
+        // Pyramid pattern
         int[][] pattern = {
-                {0, 0, 1, 1, 0, 0},
-                {0, 1, 1, 1, 1, 0},
-                {1, 1, 1, 1, 1, 1},
-                {0, 1, 1, 1, 1, 0},
-                {0, 0, 1, 1, 0, 0}
+                {0, 0, 0, 1, 1, 0, 0, 0},
+                {0, 0, 1, 1, 1, 1, 0, 0},
+                {0, 1, 1, 1, 1, 1, 1, 0},
+                {1, 1, 1, 1, 1, 1, 1, 1},
+                {1, 1, 1, 1, 1, 1, 1, 1}
         };
 
         int rows = pattern.length;
