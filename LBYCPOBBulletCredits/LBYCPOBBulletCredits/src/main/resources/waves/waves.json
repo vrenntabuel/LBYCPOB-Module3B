@@ -1,0 +1,409 @@
+{
+  "waves": [
+    {
+      "title": "Realm of Abstraction",
+      "difficultyMultiplier": 1.0,
+      "entries": [
+        {
+          "name": "Class",
+          "health": 3,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "STRAIGHT",
+            "durability": "FRAGILE",
+            "baseInterval": 0.8,
+            "bulletSpeed": 170
+          }
+        },
+        {
+          "name": "Object",
+          "health": 3,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "STRAIGHT",
+            "durability": "FRAGILE",
+            "baseInterval": 0.8,
+            "bulletSpeed": 170
+          }
+        },
+        {
+          "name": "Attribute",
+          "health": 4,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "SPREAD",
+            "durability": "INDESTRUCTIBLE",
+            "baseInterval": 1.1,
+            "bulletSpeed": 160,
+            "spreadCount": 4,
+            "totalSpreadDegrees": 40
+          }
+        },
+        {
+          "name": "Method",
+          "health": 4,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "SPREAD",
+            "durability": "INDESTRUCTIBLE",
+            "baseInterval": 1.1,
+            "bulletSpeed": 160,
+            "spreadCount": 4,
+            "totalSpreadDegrees": 40
+          }
+        }
+      ]
+    },
+    {
+      "title": "PILLAR: Abstraction",
+      "difficultyMultiplier": 1.1,
+      "entries": [
+        {
+          "name": "Abstraction",
+          "health": 30,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "RADIAL_BURST",
+            "durability": "TOUGH",
+            "baseInterval": 1.5,
+            "bulletSpeed": 150,
+            "bulletsPerBurst": 16
+          }
+        }
+      ]
+    },
+    {
+      "title": "Realm of Encapsulation",
+      "difficultyMultiplier": 1.25,
+      "entries": [
+        {
+          "name": "Private Field",
+          "health": 4,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "STRAIGHT",
+            "durability": "FRAGILE",
+            "baseInterval": 0.6,
+            "bulletSpeed": 190
+          }
+        },
+        {
+          "name": "Getter",
+          "health": 4,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "SPIRAL",
+            "durability": "INDESTRUCTIBLE",
+            "shotInterval": 0.15,
+            "bulletSpeed": 140,
+            "angleStepDegrees": 12
+          }
+        },
+        {
+          "name": "Setter",
+          "health": 4,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "SPIRAL",
+            "durability": "INDESTRUCTIBLE",
+            "shotInterval": 0.15,
+            "bulletSpeed": 140,
+            "angleStepDegrees": -12
+          }
+        },
+        {
+          "name": "Access Modifier",
+          "health": 5,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "RANDOM",
+            "durability": "FRAGILE",
+            "minInterval": 0.25,
+            "maxInterval": 0.75,
+            "bulletSpeed": 170,
+            "coneDegrees": 70
+          }
+        }
+      ]
+    },
+    {
+      "title": "PILLAR: Encapsulation",
+      "difficultyMultiplier": 1.35,
+      "entries": [
+        {
+          "name": "Encapsulation",
+          "health": 34,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "SPIRAL",
+            "durability": "INDESTRUCTIBLE",
+            "shotInterval": 0.13,
+            "bulletSpeed": 150,
+            "angleStepDegrees": 9
+          }
+        }
+      ]
+    },
+    {
+      "title": "Realm of Inheritance",
+      "difficultyMultiplier": 1.5,
+      "entries": [
+        {
+          "name": "Superclass",
+          "health": 5,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "SPREAD",
+            "durability": "TOUGH",
+            "baseInterval": 0.9,
+            "bulletSpeed": 170,
+            "spreadCount": 6,
+            "totalSpreadDegrees": 60
+          }
+        },
+        {
+          "name": "Subclass",
+          "health": 5,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "WALL",
+            "durability": "INDESTRUCTIBLE",
+            "baseInterval": 1.3,
+            "bulletSpeed": 170,
+            "wallSegments": 10,
+            "wallWidth": 500
+          }
+        },
+        {
+          "name": "extends",
+          "health": 4,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "STRAIGHT",
+            "durability": "FRAGILE",
+            "baseInterval": 0.45,
+            "bulletSpeed": 190
+          }
+        },
+        {
+          "name": "Constructor Chaining",
+          "health": 6,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "SPREAD",
+            "durability": "FRAGILE",
+            "baseInterval": 0.9,
+            "bulletSpeed": 170,
+            "spreadCount": 6,
+            "totalSpreadDegrees": 60
+          }
+        }
+      ]
+    },
+    {
+      "title": "PILLAR: Inheritance",
+      "difficultyMultiplier": 1.65,
+      "entries": [
+        {
+          "name": "Inheritance",
+          "health": 38,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "WALL",
+            "durability": "TOUGH",
+            "baseInterval": 0.9,
+            "bulletSpeed": 180,
+            "wallSegments": 12,
+            "wallWidth": 600
+          }
+        }
+      ]
+    },
+    {
+      "title": "Realm of Polymorphism",
+      "difficultyMultiplier": 1.8,
+      "entries": [
+        {
+          "name": "Overloading",
+          "health": 6,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "RANDOM",
+            "durability": "FRAGILE",
+            "minInterval": 0.18,
+            "maxInterval": 0.5,
+            "bulletSpeed": 180,
+            "coneDegrees": 90
+          }
+        },
+        {
+          "name": "Overriding",
+          "health": 6,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "RANDOM",
+            "durability": "FRAGILE",
+            "minInterval": 0.18,
+            "maxInterval": 0.5,
+            "bulletSpeed": 180,
+            "coneDegrees": 90
+          }
+        },
+        {
+          "name": "Interface",
+          "health": 7,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "RADIAL_BURST",
+            "durability": "INDESTRUCTIBLE",
+            "baseInterval": 1.2,
+            "bulletSpeed": 160,
+            "bulletsPerBurst": 14
+          }
+        },
+        {
+          "name": "Abstract Method",
+          "health": 7,
+          "isPillarBoss": false,
+          "firePattern": {
+            "type": "RADIAL_BURST",
+            "durability": "INDESTRUCTIBLE",
+            "baseInterval": 1.2,
+            "bulletSpeed": 160,
+            "bulletsPerBurst": 14
+          }
+        }
+      ]
+    },
+    {
+      "title": "FINALE: The Four Pillars United",
+      "difficultyMultiplier": 1.6,
+      "entries": [
+        {
+          "name": "Encapsulation",
+          "health": 40,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "SPIRAL",
+            "durability": "INDESTRUCTIBLE",
+            "shotInterval": 0.12,
+            "bulletSpeed": 170,
+            "angleStepDegrees": 11
+          }
+        },
+        {
+          "name": "Abstraction",
+          "health": 40,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "RADIAL_BURST",
+            "durability": "INDESTRUCTIBLE",
+            "baseInterval": 1.1,
+            "bulletSpeed": 170,
+            "bulletsPerBurst": 18
+          }
+        },
+        {
+          "name": "Inheritance",
+          "health": 40,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "SPREAD",
+            "durability": "TOUGH",
+            "baseInterval": 0.9,
+            "bulletSpeed": 170,
+            "spreadCount": 6,
+            "totalSpreadDegrees": 60
+          }
+        },
+        {
+          "name": "Polymorphism",
+          "health": 45,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "RANDOM",
+            "durability": "INDESTRUCTIBLE",
+            "minInterval": 0.13,
+            "maxInterval": 0.35,
+            "bulletSpeed": 190,
+            "coneDegrees": 110
+          }
+        }
+      ]
+    },
+    {
+      "title": "POST-CREDITS: Engr. Jared Abayan",
+      "difficultyMultiplier": 1.8,
+      "entries": [
+        {
+          "name": "Engr. Jared Abayan",
+          "health": 60,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "SPIRAL",
+            "durability": "INDESTRUCTIBLE",
+            "shotInterval": 0.14,
+            "bulletSpeed": 160,
+            "angleStepDegrees": 10
+          }
+        }
+      ]
+    },
+    {
+      "title": "POST-CREDITS: Dr. Ronnel Agulto",
+      "difficultyMultiplier": 1.8,
+      "entries": [
+        {
+          "name": "Dr. Ronnel Agulto",
+          "health": 60,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "RANDOM",
+            "durability": "INDESTRUCTIBLE",
+            "minInterval": 0.18,
+            "maxInterval": 0.5,
+            "bulletSpeed": 180,
+            "coneDegrees": 90
+          }
+        }
+      ]
+    },
+    {
+      "title": "POST-CREDITS: Dr. Melvin Cabatuan",
+      "difficultyMultiplier": 1.8,
+      "entries": [
+        {
+          "name": "Dr. Melvin Cabatuan",
+          "health": 60,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "RADIAL_BURST",
+            "durability": "TOUGH",
+            "baseInterval": 1.1,
+            "bulletSpeed": 165,
+            "bulletsPerBurst": 16
+          }
+        }
+      ]
+    },
+    {
+      "title": "POST-CREDITS: Dr. Cesar Llorente",
+      "difficultyMultiplier": 1.8,
+      "entries": [
+        {
+          "name": "Dr. Cesar Llorente",
+          "health": 60,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "WALL",
+            "durability": "TOUGH",
+            "baseInterval": 0.85,
+            "bulletSpeed": 160,
+            "wallSegments": 12,
+            "wallWidth": 640
+          }
+        }
+      ]
+    }
+  ]
+}
