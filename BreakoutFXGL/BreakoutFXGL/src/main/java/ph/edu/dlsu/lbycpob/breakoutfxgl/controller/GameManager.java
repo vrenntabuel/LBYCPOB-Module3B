@@ -99,12 +99,14 @@ public class GameManager {
         double startY = 90;
 
         // 1 = brick, 0 = empty space
-        // Pyramid pattern
+        // Hourglass pattern
         int[][] pattern = {
+                {1, 1, 1, 1, 1, 1, 1, 1},
+                {0, 1, 1, 1, 1, 1, 1, 0},
+                {0, 0, 1, 1, 1, 1, 0, 0},
                 {0, 0, 0, 1, 1, 0, 0, 0},
                 {0, 0, 1, 1, 1, 1, 0, 0},
                 {0, 1, 1, 1, 1, 1, 1, 0},
-                {1, 1, 1, 1, 1, 1, 1, 1},
                 {1, 1, 1, 1, 1, 1, 1, 1}
         };
 
