@@ -93,37 +93,60 @@ public class GameManager {
      * level" feature).
      */
     private void buildLevel() {
-        int rows = 5;
-        int cols = 8;
         double brickWidth = 80;
         double brickHeight = 24;
         double gap = 6;
-        double startX = (fieldWidth - (cols * (brickWidth + gap) - gap)) / 2.0;
+
         double startY = 90;
+
+        // 1 = brick, 0 = empty space
+        int[][] pattern = {
+                {0, 0, 1, 1, 0, 0},
+                {0, 1, 1, 1, 1, 0},
+                {1, 1, 1, 1, 1, 1},
+                {0, 1, 1, 1, 1, 0},
+                {0, 0, 1, 1, 0, 0}
+        };
+
+        int rows = pattern.length;
+        int cols = pattern[0].length;
+
+        double totalWidth =
+                cols * (brickWidth + gap) - gap;
+
+        double startX =
+                (fieldWidth - totalWidth) / 2.0;
 
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
-                double x = startX + col * (brickWidth + gap);
-                double y = startY + row * (brickHeight + gap);
 
-                if (row == 0) {
-                    // The top row is UNBREAKABLE, but we deliberately
-                    // leave every OTHER column empty (a gap) instead of
-                    // filling the whole row solid. Without these gaps
-                    // the ball would just bounce off row 0 forever and
-                    // could never travel up past it to bounce off the
-                    // ceiling and come back down at a new angle. Using
-                    // "col % 2 == 0" keeps columns 0, 2, 4, 6 filled and
-                    // leaves columns 1, 3, 5, 7 open, so the ball can
-                    // slip through and keep the rally interesting.
-                    if (col % 2 == 0) {
-                        bricks.add(new Brick(x, y, brickWidth, brickHeight, BrickType.UNBREAKABLE));
+                if (pattern[row][col] == 1) {
+
+                    double x =
+                            startX + col * (brickWidth + gap);
+
+                    double y =
+                            startY + row * (brickHeight + gap);
+
+                    BrickType type;
+
+                    if (row == 0) {
+                        type = BrickType.UNBREAKABLE;
+                    } else if (row == 1) {
+                        type = BrickType.STRONG;
+                    } else {
+                        type = BrickType.NORMAL;
                     }
-                    // else: intentionally skipped - this is a gap, not a brick.
-                } else if (row == 1) {
-                    bricks.add(new Brick(x, y, brickWidth, brickHeight, BrickType.STRONG));
-                } else {
-                    bricks.add(new Brick(x, y, brickWidth, brickHeight, BrickType.NORMAL));
+
+                    bricks.add(
+                            new Brick(
+                                    x,
+                                    y,
+                                    brickWidth,
+                                    brickHeight,
+                                    type
+                            )
+                    );
                 }
             }
         }
