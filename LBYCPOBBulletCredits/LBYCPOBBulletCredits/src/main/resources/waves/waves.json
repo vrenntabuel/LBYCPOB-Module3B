@@ -331,6 +331,44 @@
         }
       ]
     },
+
+    {
+      "title": "POST-CREDITS: Vrennt",
+      "difficultyMultiplier": 2.0,
+      "entries": [
+        {
+          "name": "Vrennt",
+          "health": 70,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "SPIRAL",
+            "durability": "INDESTRUCTIBLE",
+            "shotInterval": 0.12,
+            "bulletSpeed": 180,
+            "angleStepDegrees": 10
+          }
+        }
+      ]
+    },
+    {
+      "title": "POST-CREDITS: Arryan",
+      "difficultyMultiplier": 2.0,
+      "entries": [
+        {
+          "name": "Arryan",
+          "health": 70,
+          "isPillarBoss": true,
+          "firePattern": {
+            "type": "RADIAL_BURST",
+            "durability": "INDESTRUCTIBLE",
+            "baseInterval": 1.0,
+            "bulletSpeed": 180,
+            "bulletsPerBurst": 18
+          }
+        }
+      ]
+    },
+
     {
       "title": "POST-CREDITS: Engr. Jared Abayan",
       "difficultyMultiplier": 1.8,
